@@ -1,4 +1,7 @@
 import "./Services.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 
 //Icons
 import food from "../../assets/images/food.png";
@@ -6,10 +9,14 @@ import delivery from "../../assets/images/scooter.png";
 import discount from "../../assets/images/discount.png";
 
 function Services() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <section className="services-container">
+    <section className="services-container" id="services">
       <div className="services-content">
-        <div className="services-box">
+        <div className="services-box" data-aos="fade-up">
           <div className="services-card">
             <div className="services-card-icon">
               <img src={food} alt="" className="services-card-img" />

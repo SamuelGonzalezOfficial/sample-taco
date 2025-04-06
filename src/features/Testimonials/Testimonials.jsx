@@ -1,10 +1,17 @@
 import "./Testimonials.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 
 function Testimonials() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <section className="testimonials-container">
+    <section className="testimonials-container" id="testimonials">
       <div className="testimonials-content">
-        <div className="testimonials-cards">
+        <div className="testimonials-cards" data-aos="fade-up">
           <div className="testimonials-card">
             <span className="testimonials-card-name">John Doe</span>
             <div className="testimonials-card-review">

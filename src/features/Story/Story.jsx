@@ -1,12 +1,30 @@
 import "./Story.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 import story from "../../assets/images/story.png";
 
 function Story() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+  const handleSmoothScroll = (event, targetId) => {
+    event.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <section class="section-container">
+    <section class="section-container" id="story">
       <div class="section-content">
         <div class="box">
-          <div class="box-info">
+          <div class="box-info" data-aos="fade-right">
             <h3 class="box-title">Nuestra historia empieza con una receta</h3>
             <p class="box-text">
               Este restaurante nació en 2017 como un pequeño local familiar en
@@ -18,9 +36,9 @@ function Story() {
               seguimos cocinando con la misma pasión, manteniendo vivo el
               espíritu casero y auténtico que nos trajo hasta aquí.
             </p>
-            <button class="box-button">Explore</button>
+            <button class="box-button" onClick={(e) => handleSmoothScroll(e, "#services")}>Saber m&aacute;s</button>
           </div>
-          <div class="box-image">
+          <div class="box-image" data-aos="fade-left">
             <img src={story} alt="Image" class="box-img" />
           </div>
         </div>
