@@ -8,11 +8,12 @@ function Hero() {
     <section class="banner-container">
       <div class="banner-content">
         <div class="banner-text">
-          <h1 class="banner-title">Creative headline and very awesome</h1>
+          <h1 class="banner-title">
+            Sabor mexicano aut&eacute;ntico para tu paladar
+          </h1>
           <h2 class="banner-subtitle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            alias ex aperiam exercitationem natus quidem sit excepturi, fuga
-            veniam deserunt.
+            Disfruta tacos, burritos y más, hechos con recetas tradicionales y
+            un toque casero. Servimos con pasión y picante desde 2017.
           </h2>
           <button class="banner-button">Show More</button>
         </div>
