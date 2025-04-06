@@ -8,6 +8,7 @@ import { About } from './features/About/About';
 import { Story } from './features/Story/Story';
 import { Services } from './features/Services/Services';
 import { Contact } from './features/Contact/Contact';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Story />
       <Services />
       <Contact />
+      <WhatsAppButton />
     </>
   );
 }
