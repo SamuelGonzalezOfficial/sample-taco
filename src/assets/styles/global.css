@@ -1,0 +1,65 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables CSS */
+:root {
+    --main-color: #ffd644;
+    --secondary-color: #ffffff;
+
+    --text-color: #202427;
+
+    --font-titles: "Montserrat", sans-serif;
+    --font-subtitles: "Montserrat", sans-serif;
+    --font-text: "Montserrat", sans-serif;
+
+    --size-titles: 3rem;
+    --size-subtitles: 1.1rem;
+    --size-text: 0.9rem;
+
+    --inner-margin: 3rem;
+    --card-radius: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class$="-container"] {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[class$="-content"] {
+    height: 100%;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[class$="-button"] {
+    padding: 15px;
+
+    width: 200px;
+    display: block;
+
+    color: var(--text-color);
+    background: var(--main-color);
+    border: none;
+    border-radius: 5px;
+
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    font-weight: 700;
+}
+
+[class$="-button"]:hover {
+    cursor: pointer;
+}
