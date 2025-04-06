@@ -4,6 +4,34 @@
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-image,
+    .contact-box {
+        width: 100%;
+    }
+    
+    .contact-box {
+        padding: 10px 1rem;
+    }
+    
+    .contact-title {
+        font-size: 2rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .contact-img {
+        min-height: 300px;
+    }
+}
+
 .contact-image {
     width: 50%;
     display: flex;
