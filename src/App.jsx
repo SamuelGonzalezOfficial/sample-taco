@@ -6,6 +6,7 @@ import { Hero } from "./features/Hero/Hero";
 import { Testimonials } from './features/Testimonials/Testimonials';
 import { About } from './features/About/About';
 import { Story } from './features/Story/Story';
+import { Services } from './features/Services/Services';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Testimonials />
       <About />
       <Story />
+      <Services />
     </>
   );
 }
