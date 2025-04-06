@@ -1,0 +1,46 @@
+.testimonials-container {
+    min-height: auto;
+}
+
+.testimonials-cards {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonials-card {
+    min-width: 250px;
+    flex: 1;
+    /* Respeta tu diseño flexible actual */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    /* Gradiente blanco muy suave */
+    background: linear-gradient(145deg, #ffffff, #f7f7f7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    color: #444;
+    /* Ajusta si tu fondo es más oscuro */
+    font-family: var(--font-text);
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto elevación al hover (opcional) */
+.testimonials-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials-card-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.testimonials-card-star {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin: 1rem 0;
+    margin-right: 10px;
+}
