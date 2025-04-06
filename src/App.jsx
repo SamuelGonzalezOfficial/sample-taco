@@ -7,6 +7,7 @@ import { Testimonials } from './features/Testimonials/Testimonials';
 import { About } from './features/About/About';
 import { Story } from './features/Story/Story';
 import { Services } from './features/Services/Services';
+import { Contact } from './features/Contact/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Story />
       <Services />
+      <Contact />
     </>
   );
 }

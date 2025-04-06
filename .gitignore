@@ -1,3 +1,9 @@
+# Aider
+.aider*
+
+# Environmental Variables
+.env
+
 # Logs
 logs
 *.log
