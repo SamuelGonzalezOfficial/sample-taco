@@ -1,0 +1,75 @@
+.main-footer {
+    background-color: #1a1a1a;
+    padding: 2rem 1rem;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--font-text);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #25d366;
+    /* Color de WhatsApp para consistencia */
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.credits {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.dev-name {
+    color: #25d366;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        order: 2;
+        margin: 1rem 0;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+    .credits {
+        order: 3;
+    }
+}
