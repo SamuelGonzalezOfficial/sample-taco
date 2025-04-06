@@ -5,6 +5,7 @@ import './assets/styles/global.css'
 import { Hero } from "./features/Hero/Hero";
 import { Testimonials } from './features/Testimonials/Testimonials';
 import { About } from './features/About/About';
+import { Story } from './features/Story/Story';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Testimonials />
       <About />
+      <Story />
     </>
   );
 }

@@ -48,4 +48,12 @@
     .box-image {
         width: 100%;
     }
+
+    .box-info {
+        order: 2;
+    }
+
+    .box-image {
+        order: 1;
+    }
 }
